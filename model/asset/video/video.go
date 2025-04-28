@@ -29,7 +29,7 @@ type Video struct {
 	// 32：视频编辑器
 	Source int `json:"source,omitempty"`
 	// Capacity 视频大小
-	Capacity int `json:"capacity,omitempty"`
+	Capacity float64 `json:"capacity,omitempty"`
 	// Format 视频格式
 	Format string `json:"format,omitempty"`
 	// Width 宽度
