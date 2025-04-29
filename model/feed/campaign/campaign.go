@@ -74,7 +74,7 @@ type Campaign struct {
 	// 1 - 已开通
 	// 0 - 未开通
 	RtaStatus int `json:"rtaStatus,omitempty"`
-	// FtTypes 流量类型
+	// FTypes 流量类型
 	// 取值范围：枚举值，列表如下
 	// 1 - 自定义类-百度信息流
 	// 2 - 自定义类-贴吧
@@ -82,7 +82,7 @@ type Campaign struct {
 	// 8 - 自定义类-好看视频（好看视频流量目前在实验阶段，仅限已开通该流量的账户使用）
 	// 64 - 自定义类-百度小说
 	// 空数组（[]）表示默认。默认、自定义、百青藤不可以同时选择，出价上移名单使用字段，名单外使用无效。
-	FtTypes []int `json:"ftTypes,omitempty"`
+	FTypes []int `json:"ftypes,omitempty"`
 	// BidType 出价方式
 	// 默认值：1
 	// 取值范围：枚举值，列表如下
